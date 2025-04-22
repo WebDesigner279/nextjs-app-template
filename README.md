@@ -11,38 +11,58 @@ Este é um template completo para aplicações **Next.js 14 App Router** com sup
 
 ---
 
-## 📁 Estrutura de Pastas
+## 📁 Estrutura de Pastas e Arquivos
 
 ```bash
-.
-├── app/                         # Páginas e layout principal (App Router)
-│   ├── components/             # Componentes reutilizáveis
-│   │   ├── Button/             # Botão personalizado com estilos
-│   │   └── ContactForm/        # Formulário de contato completo
-│   ├── about/                  # Página "Sobre"
-│   ├── contact/                # Página de contato com formulário
-│   └── home/                   # Página inicial
-├── public/                     # Arquivos públicos (favicon, imagens)
-├── store/                      # Configuração do Redux Toolkit
-│   ├── slices/                # Slices da store
-│   ├── provider.ts            # Provider da store para App Router
-│   └── store.ts               # Store configurada
-├── utils/                      # Funções utilitárias
-│   └── storage.ts             # Exemplo de manipulação com localStorage
-├── styles/                     # Estilos globais e variáveis
-│   └── variables.scss
-├── app/globals.scss           # Estilo global
-├── .gitignore
-├── tsconfig.json              # Configuração TypeScript (com aliases)
-├── next.config.js             # Configuração do Next.js
-├── package.json
-└── README.md
+Comando | Descrição
+
+mkdir -p app/components/Button
+mkdir -p app/components/ContactForm
+mkdir -p app/home
+mkdir -p app/about
+mkdir -p app/contact
+mkdir -p styles
+mkdir -p store/slices
+mkdir -p utils
+
+touch app/about/page.module.scss
+touch app/about/page.tsx
+touch app/components/Button/button.module.scss
+touch app/components/Button/Button.tsx
+touch app/components/Button/index.tsx
+touch app/components/ContactForm/ContactForm.module.scss
+touch app/components/ContactForm/ContactForm.tsx
+touch app/components/ContactForm/index.tsx
+touch app/contact/page.module.scss
+touch app/contact/page.tsx
+touch app/home/page.module.scss
+touch app/home/page.tsx
+touch app/globals.scss
+touch app/layout.tsx
+touch app/page.tsx
+touch store/index.ts
+touch store/provider.tsx
+touch store/store.ts
+touch store/slices/exampleSlice.ts
+touch utils/storage.ts
+touch styles/variables.scss
+touch .eslintrc.json
+touch .gitignore
+touch next-env.d.ts
+touch next.config.js
+touch package-lock.json
+touch package.json
+touch README.md
+touch tsconfig.json
+
 
 
 Comando | Descrição
+npm install | Instala as dependências do projeto
 npm run dev | Inicia o servidor de desenvolvimento
 npm run build | Compila a aplicação para produção
 npm run start | Inicia o servidor de produção
+
 
 
 🧩 Tecnologias Utilizadas
